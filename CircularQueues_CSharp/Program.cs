@@ -14,7 +14,18 @@ namespace CircularQueues_CSharp
             FRONT = -1;
             REAR = -1;
         }
+        public void insert(int element)
+        {
+            /* This statement checks for the overflow condition. */
+            if ((FRONT == 0 && REAR == max - 1) || (FRONT == REAR + 1))
+            {
+                Console.WriteLine("\nQueue overflow\n");
+                return;
+            }
+            /* The following statement checks whether the queue is empty. If the queue is 
+               empty, then the value of the REAR and FRONT variables is set to 0.*/
 
+        }
     }
 }
 
