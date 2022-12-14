@@ -143,7 +143,11 @@ namespace CircularQueues_CSharp
                                 q.remove();
                             }
                             break;
-
+                        case '3':
+                            {
+                                q.display();
+                            }
+                            break;
                     }
                 }   
             }
